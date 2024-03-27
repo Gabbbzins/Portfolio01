@@ -1,17 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio01</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header{
+            display : flex;
+            justify-content: space-between;
+            padding: 20px 60px;
+            background-color: rgb(170, 170, 170);
+        }
+        header ul{
+            display : flex;
+            gap: 30px;
+            list-style: none;
+        }
+        header a{
+            text-decoration: none;
+            color: white;
+        }
+        .logo{
+            color: whitesmoke;
+        }
+        .section{
+            border-bottom: 2px solid #999999;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 60px;
+        }
+        .direita img{
+            width: 40%;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+        }
+        .direita, .esquerda{
+            width: 60vw;
+        }
+    </style>
 </head>
 <body>
-    <p><h1>Bem-vindo ao meu Portfolio!</h1></p>
-    <i><p><h10>Gabriel Bitencourte de Sousa</h10></p></i>
+    <main>
+    <header>
+    <div class = "Logo">
+    <h1>Portfólio de Gabriel Sousa</h1>
     
-    <p><h2>Projetos</h2></p>
+    </div>
+    <nav>
+            <ul>
+                    <li><a href = "#Home"> Home </a></li>
+                    <li><a href = "#Sobre">Sobre</a></li>
+                    <li><a href = "#Projetos">Projetos</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="section" id="#Home">
+        <div class="esquerda">
+            <h1>Bem-Vindo</h1>
+            <p>Esse é meu portfólio de Desenvolvimento de Sistema!</p>
+        
 
-    <p><h2>Sobre mim</h2></p>
-    <p1><h3>Meu nome é Gabriel, tenho 16 anos, nasci dia 19/08 em São José, onde vivo até hoje. Estou no 2° do Ensino Médio e fazendo as aulas do técnico!</h3></p1>
+        </div>
+        
+        <div class="direita">
+            <img src="https://fotos-jornaldocarro-estadao.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2023/02/07123249/Lamborghini-1-1160x652.jpg"/>
+        </div>
+    </div>
+</main>
 </body>
 </html>
